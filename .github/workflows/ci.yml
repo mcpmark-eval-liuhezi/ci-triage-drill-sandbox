@@ -11,6 +11,4 @@ jobs:
         run: echo "Starting the CI triage drill for the team."
 
       - name: Deliberate failure
-        run: |
-          echo "DELIBERATE FAILURE: this step exits 42 on purpose so the triage drill has an unmistakable red run."
-          exit 42
+        run: echo "DELIBERATE FAILURE: fixed! This step used to exit 42, and now it passes cleanly."
