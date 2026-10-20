@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  triage-target:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the team
+        run: echo "Starting the CI triage drill for the team."
+
+      - name: Deliberate failure
+        run: |
+          echo "DELIBERATE FAILURE: this step exits 42 on purpose so the triage drill has an unmistakable red run."
+          exit 42
